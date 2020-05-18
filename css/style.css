@@ -1,6 +1,7 @@
 *{
     margin: 0 auto;
     box-sizing: border-box;
+    color:white;
 }
 html,body{
     margin:0;
@@ -10,4 +11,137 @@ img{
     max-width: 100%;
     height: auto;
     vertical-align: top;
+}
+body{    
+    background-image: url(../img/gris_granulado.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@font-face {
+    font-family: Parraf;
+    src: url(../fonts/parrafos.ttf);
+}
+@font-face{
+    font-family:Titulos;
+    src:url(../fonts/titulos.ttf);
+}
+p{
+    font-family: Parraf;
+}
+#container{
+    width: 90%;
+    min-width: 280px;
+    max-width: 1200px;
+   
+}
+#header-contacte{
+    display: flex;   
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+}
+#contacte-phone{
+    width: 70%;
+    min-width: 245px;
+    text-align: right;
+}
+.contacte-phone-box{
+    display:inline-flex; 
+    padding: 5px;      
+    min-width: 245px;
+    border:1px solid white;
+    margin:5px 0px;  
+    text-align: center;      
+}
+#social{
+    display: inline-flex;
+    margin:5px 0px;
+}
+.ico{
+    margin:5px;
+}
+#logo-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo{
+    font-size: 3em; 
+    width: 40%;         
+}
+#menu{
+    flex:1;
+    text-align: right;
+    font-size: 1.2em;        
+}
+#menu a{
+    text-decoration: none; 
+    padding: 5px 8px;   
+}
+.text-danger,#pag-actual{
+    color:red;    
+}
+#pag-actual{
+    padding: 5px 8px;
+}
+.text-danger{
+    font-weight: bold;  
+}
+.separator{
+    margin:5px;
+}
+#body-img{   
+    background-image: url(../img/portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 800px;
+    position: relative;
+}
+#body-img-text{
+    font-size: 6vw;
+    background-color:rgba(5,0,0, 0.2); 
+    padding:20px;
+}
+#body-img-btn{
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    bottom: 30px;
+    left:30px;
+    color: white;
+    font-family: Parraf;
+    padding-top: 10px;
+    padding-bottom:10px; 
+    border-radius: 5px;
+    border:2px solid rgba(145,0,0); 
+    background:linear-gradient(rgba(125,0,0),rgba(223,48,48));
+    box-sizing: border-box;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#limitador{
+    display: flex;   
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-content: center; 
+    align-items: center;
+    font-size: 4vw;   
+    margin: 20px 0px;
+}
+#limitador hr{
+    width: 60%;
+    margin: 0;
+}
+#limitador p{
+    margin:0;
+}
+#body-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+@media only screen and (max-width:480px){
+
 }
