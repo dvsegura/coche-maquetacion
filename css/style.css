@@ -25,7 +25,7 @@ body{
     font-family:Titulos;
     src:url(../fonts/titulos.ttf);
 }
-p{
+p,h3{
     font-family: Parraf;
 }
 #container{
@@ -95,9 +95,10 @@ p{
     background-image: url(../img/portada.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     box-sizing: border-box;
     height: 800px;
-    position: relative;
+    position: relative;    
 }
 #body-img-text{
     font-size: 6vw;
@@ -121,6 +122,8 @@ p{
     display:flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    user-select: none;
 }
 #limitador{
     display: flex;   
@@ -138,9 +141,29 @@ p{
 #limitador p{
     margin:0;
 }
-#body-row{
+#col-cars{
     display: flex;
     flex-wrap: wrap;
+}
+.car{
+    width: 23%;
+    min-width: 276px;
+}
+.m-2{
+    margin: 20px 0px;
+}
+.m-1{
+    margin-top: 20px;
+}
+.car-text-danger{
+    color:red;
+}
+.btn-car{
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
 }
 @media only screen and (max-width:480px){
 
