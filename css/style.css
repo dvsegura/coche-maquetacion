@@ -143,6 +143,7 @@ p,h3{
 #col-cars{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .car{
     width: 23%;
@@ -181,9 +182,12 @@ p,h3{
     margin:20px 0px;
 }
 .car-inven{
-    width: 45%;
-    min-width: 380px;  
-    border: 1px solid red; 
+    width: 48%;
+    min-width: 380px;
+    margin: 15px 0;
+}
+.car-img img{
+    width: 100%;
 }
 .container-text{
     display: flex;
@@ -195,11 +199,30 @@ p,h3{
 }
 .text-right{
     width: 49%;
+    min-width: 210px;
     border-left:1px solid white;
     padding-left: 20px;
     box-sizing: border-box;
 }
-
 @media only screen and (max-width:480px){
-
+    .text-right{
+        width: 100%;        
+    }
+    .btn-car{
+        width: 50%;
+    }
+    .text-left{
+        width: 100%; 
+        padding-left: 20px;          
+    } 
+    
 }
+@media only screen and (max-width:848px){
+    .car-inven{
+        width: 100%;        
+    }
+    .inv-header-p{
+        width: 100%;
+    }
+}
+
