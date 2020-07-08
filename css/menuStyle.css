@@ -1,0 +1,43 @@
+.menu-bar{
+    display: none;
+}
+@media screen and (max-width:800px){
+    .menu-bar{
+        display: block; 
+        margin: 0;    
+    }
+    .logo{  
+        width: 100%;      
+        display: flex;
+        justify-content: space-between;        
+    }
+    .logo p{
+        margin:0;
+    }
+    
+    .logo{
+        cursor: pointer;
+    } 
+    .menu{
+        width: 60%;
+        /*height: 100%;*/
+        margin:0;
+        position: fixed;
+       /* display: block;*/
+        left:-100%;        
+        background-color: grey;  
+        z-index: 1;  
+        overflow: visible;  
+    }
+    .separetor{
+        display: none;
+    }
+    .menu a{
+       display: block;  
+       /* border-bottom: 1px solid rgba(255,255,255,.3);      */
+    }
+    .bt-menu{
+        flex:1;    
+    }    
+  
+}
