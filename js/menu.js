@@ -7,13 +7,13 @@ function main(){
         
         if(cont == 1){            
             $('.menu').animate({
-                left:'0'
+                right:'0'
             });
             cont = 0;
         }else{
             cont = 1;
             $('.menu').animate({
-                left:'-100%'
+                right:'-100%'
             });
         }
 

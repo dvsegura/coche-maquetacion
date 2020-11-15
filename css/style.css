@@ -1,6 +1,6 @@
 *{
     margin: 0 auto;
-    color:white;
+    color:white;    
 }
 img{
     max-width: 100%;
@@ -55,10 +55,12 @@ p,h3{
 .ico{
     margin:5px;
 }
-.logo-menu{
+.logo-menu{ 
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    position: relative;
 }
 .logo{
     font-size: 3em; 
